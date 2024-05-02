@@ -1,0 +1,30 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: chuck-says-api
+  name: chuck-says-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chuck-says-api
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: chuck-says-api
+    spec:
+      containers:
+        - name: chuck-says-api
+          image: ogomezso/chuck-says-api:0.0.1
+          resources: {}
+          volumeMounts:
+            - name: app-config-volume
+              mountPath: /config
+      volumes:
+        - name: app-config-volume
+          configMap:
+            name: chuck-says-api-config
