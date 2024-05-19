@@ -1,0 +1,12 @@
+{
+  "name": "fact-outbox",
+  "config": {
+    "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+    "connection.url": "jdbc:mysql://mysql:3306/db?user=user&password=password&useSSL=false",
+    "topic.prefix": "chuck-",
+    "mode":"incrementing",
+    "table.whitelist" : "db.facts",
+    "incrementing.column.name": "id",
+    "validate.non.null": false
+  }
+}

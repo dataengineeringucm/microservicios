@@ -1,0 +1,15 @@
+{
+  "name": "facts-query",
+  "config": {
+    "connector.class": "com.mongodb.kafka.connect.MongoSinkConnector",
+    "tasks.max": 1,
+    "database": "test",
+    "collection": "facts",
+    "connection.uri": "mongodb://mongo:27017",
+    "value.converter.schemas.enable": "false",
+    "topics": "chuck-facts",
+    "mongo.errors.log.enable":"true",
+    "document.id.strategy.overwrite.existing": "true",
+    "document.id.strategy": "com.mongodb.kafka.connect.sink.processor.id.strategy.BsonOidStrategy"
+  }
+}

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: chuck-command
+server:
+  port: 28080
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
