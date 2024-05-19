@@ -7,9 +7,12 @@
    b. Elegir y justificar el/los mejores patrones de arquitectura para los problemas planteados (consistencia, sincronía, transaccionalidad, que asunciones hacemos y como el patrón elegido ayuda a resolver el problema)
 2. Documentación de las APIS: Usar [Swagger Editor](https://editor.swagger.io/) para documentar tanto las APIs Rest como las posibles APIs de eventos.
 3. Si la opción elegida es la de crear el docker file sobre el servicio `chuck-says-query` implementado en `Python` en esta carpeta:
+
    a. Adjuntar el Dockerfile implementado para la aplicación. Este [ejemplo](https://docs.docker.com/language/python/containerize/) puede ser de utilidad
+
    b. Subir la imagen a DockerHub  
-   b. Crear los recursos Kubernetes (deployment, service) necesarios para exponer el servicio por `LoadBalancer` 
+
+   c. Crear los recursos Kubernetes (deployment, configmap, service) necesarios para exponer el servicio por `LoadBalancer` 
 
 ## Formato de Entrega
 
