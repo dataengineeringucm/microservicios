@@ -1,4 +1,4 @@
-Flask==2.0.2
-pymongo==3.12.1
-configparser==5.0.2
-Werkzeug==2.2.2
+Flask==3.0.3
+pymongo==4.7.2
+configparser==7.0.0
+Werkzeug==3.0.3
