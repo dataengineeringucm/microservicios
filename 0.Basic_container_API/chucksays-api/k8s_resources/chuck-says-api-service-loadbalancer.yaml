@@ -5,7 +5,8 @@ metadata:
   creationTimestamp: null
   labels:
     app: chuck-says-api
-  name: chuck-says-api
+  name: chuck-says-api-lb
+  namespace: default
 spec:
   type: LoadBalancer
   ports:

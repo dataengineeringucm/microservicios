@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: chuck-says-api
+  name: chuck-says-api-cip
+  namespace: default
+spec:
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: chuck-says-api
