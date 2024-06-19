@@ -149,16 +149,20 @@ services:
       - broker
       - schema-registry
       - mysql
-  chuck-says-query:
-    build:
-      context: ../../3.Tarea/chuck-says-query
-      dockerfile: Dockerfile
-    ports:
-      - "48080:48080"
-    hostname: chuck-says-query
-    container_name: chuck-says-query
-    depends_on:
-      - broker
-      - schema-registry
-      - mysql
-      - mongodb
+################################################################################################
+# Servicio para la segunda parte de la tarea.                                                  #
+# Crear el Dockerfile para chuck-says-query y situarlo dentro de 3.Tarea/chuck-says-query      #
+################################################################################################
+#  chuck-says-query:
+#    build:
+#      context: ../../3.Tarea/chuck-says-query
+#      dockerfile: Dockerfile
+#    ports:
+#      - "48080:48080"
+#    hostname: chuck-says-query
+#    container_name: chuck-says-query
+#    depends_on:
+#      - broker
+#      - schema-registry
+#      - mysql
+#      - mongodb
